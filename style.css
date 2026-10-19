@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.rating-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #30245f;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.star {
+    border: none;
+    background: transparent;
+    color: #d5d5d5;
+    font-size: 43px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+.star.active,
+.star.hovered {
+    color: #ffb400;
+}
+
+#ratingText {
+    min-height: 25px;
+    color: #5142c5;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.reset-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 9px;
+    background: #6c5ce7;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.reset-btn:hover {
+    background: #5142c5;
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    .stars {
+        gap: 3px;
+    }
+
+    .star {
+        font-size: 36px;
+    }
+}
